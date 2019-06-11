@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="containers-slides">
+					<h3>Containers</h3>
+					<ul>
+						<li><a href="#containers-slides__divs">divs</a></li>
+						<li><a href="#containers-slides__forms">forms</a></li>
+						<li><a href="#containers-slides__demo1">demo1</a></li>
+						<li><a href="#containers-slides__demo2">demo2</a></li>
+					</ul>
+				</section>
+				<section>
+					<section id="containers-slides__divs">
+						<h4>divs</h4>
+						<p>CSS Division (div) is a container element and it is used to group related items together.</p>
+						<section>
+						</section>
+						<p>What behavior do divs have?</p>
+						<p>When do we use divs?</p>
+					</section>
+					<section id="containers-slides__forms">
+						<h4>forms</h4>
+						<p>What behavior do forms have?</p>
+						<p>When do we use forms?</p>
+					</section>
+					<section id="containers-slides__demo1">
+						<h4>demo</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorem quisquam, debitis dolores amet ratione molestias quia reiciendis delectus qui voluptate sint voluptates architecto, error porro earum dolor impedit aut?</p>
+					</section>
+					<section id="containers-slides__demo2">
+						<h4>demo</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorem quisquam, debitis dolores amet ratione molestias quia reiciendis delectus qui voluptate sint voluptates architecto, error porro earum dolor impedit aut?</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
