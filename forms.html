@@ -21,15 +21,49 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<link rel="stylesheet" href="css/forms.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<ul>
-						<li><a href="/divs.html">divs</a></li>
-						<li><a href="/forms.html">forms</a></li>
-					</ul>
+					<section>
+						<span class="underline"><h4>forms</h4></span>
+						<span><p>HTML Form (form) is a container element like a div or span. It is used to group related items together, extract data from them, and submit that data to a server.</p></span>
+					</section>
+
+					<section>
+						<span class="question"><p>What behavior do forms have?</p></span>
+						<span class="fragment">
+							<span class="answer"><p>They submit data to a server.</p></span>
+						</span>
+					</section>
+
+					<section>
+						<span class="question"><p>When do we use forms?</p></span>
+						<span class="fragment">
+							<span class="answer"><p>When we want to extract data from an element, or group of elements, and submit that data to a server.</p></span>
+						</span>
+					</section>
+
+					<section>
+						<span>
+							<pre>
+								<code data-trim>
+									<form action="#">
+										<input type="text">
+										<input type="submit">
+									</form>
+								</code>
+							</pre>
+						</span>
+						<span>
+							<figure>
+								<img src="images/containers-form-example1.png" alt="rendering of box model">
+								<figcaption>rendering of form and its elements</figcaption>
+							</figure>
+						</span>
+					</section>
 				</section>
 			</div>
 		</div>
